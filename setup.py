@@ -17,7 +17,7 @@ setup(
         py_modules=['plotHicmain'],
 	packages=find_packages(),
         include_package_data=True,
-        version='0.1.0',
+        version='0.1.1',
         install_requires=[
         'matplotlib',
         'numpy',
