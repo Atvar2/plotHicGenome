@@ -7,7 +7,7 @@ def plotJuicerbox():
     args = Parser("Result of juicer:", "ajusted by juicerbox")
     #linkFile,reviewFile,chrNum,prefix,Bin,_sorted
     if args.CHR == 'whole' and not args.MTX:
-        sys.stdout.write("Readding and dealing with Hic matrix, please patient...")
+        sys.stdout.write("Readding and dealing with Hic matrix, please patient...\n")
         getFileObjects = Juicerbox(args.Hic, args.bed, args.N, args.P, args.R,args._sorted)
         matrix, axesTicks = getFileObjects.obtainMtxAxes()
         args.ODIR=re.sub('/$','',args.ODIR)+'/'
