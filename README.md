@@ -63,7 +63,7 @@ Display Hic matrix of Hic-proc
 plotHicGenome   Hicproc     Hic_500000.matrix   Hic_500000_abs.bed   -p  chr  -W  whole  -E  chr20  -n  40  -r  500000  -l   T   -i  300   -z  6,6   -C  black   -L  1 -A  1  -B  "0.5%" -D 0.1    -F  6  -o  HicprocWhole.pdf    -R  ./
 plotHicGenome   Hicproc     Hic_500000.matrix   Hic_500000_abs.bed   -p  chr  -W  chr1  -E  chr20  -n  40  -r  500000  -l   T   -i  300   -z  6,6   -C  black   -L  1 -A  1  -B  "0.5%" -D 0.1    -F  6  -o  Hicprocchr1.pdf    -R  ./
 ```
-![Hicproc whole genome](https://github.com/chenjunhui/plotHicGenome/blob/plotHicGenome/example/HicprocWhole.pdf)<br/>
+![Hicproc whole genome](https://github.com/chenjunhui/plotHicGenome/blob/plotHicGenome/example/Hic_proc.png)<br/>
 
 Display Hic matrix of Juicerbox
 --------------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ However, if dissatisfied with the produced figure above, the parameters are need
 ```Bash
 plotHicGenome  juicer  ./merged_nodups.txt  ./genome.review.assembly  -W whole -n  24   -s  True  -l  t  -F  4   -r  500000  -X  2  -w  0.5  -d  3  -S  'dashed'  -i 300 -z 6,6  -C  'black'  -L  0.8   -A  0.8  -B  '1%' -D  0.2  -o  Juicerboxsorted.pdf    -R   ./sorted
 ```
-![juicerbox sorted](https://github.com/chenjunhui/plotHicGenome/blob/plotHicGenome/example/JuicerboxsortedT_v2.pdf)
+![juicerbox sorted](https://github.com/chenjunhui/plotHicGenome/blob/plotHicGenome/example/sorted.png)
 `Non-sorted by chromosome size`
 ```Bash
 plotHicGenome  juicer  ./merged_nodups.txt  ./genome.review.assembly  -W whole -n  24   -s  False  -l  t  -F  4   -r  500000  -X  2  -w  0.5  -d  3  -S  'dashed'  -i 300 -z 6,6  -C  'black'  -L  0.8   -A  0.8  -B  '1%' -D  0.2  -o  JuicerboxNonsorted.pdf    -R   ./sorted
