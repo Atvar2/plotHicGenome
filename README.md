@@ -93,6 +93,9 @@ plotHicGenome  juicer  ./merged_nodups.txt  ./genome.review.assembly -W  whole  
 ```Bash
 plotHicGenome juicer   ./merged_nodups.txt  .genome.review.assembly  -W   chr1   -n  24   -s  True  -l  t  -F  4   -r  500000  -X  2  -w  0.5  -d  3  -S  'dashed'  -i 300 -z 6,6  -C  'black'  -L  0.8   -A  0.8  -B  '1%' -D  0.2  -o  JuicerboxNtsortedMtx_testchr24.pdf  -H  ./sorted/Hicmatrix.txt   -R   ./sorted
 ```
+Contributors
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* chenjhbio
 
 Parameters
 ==============================================================================================================================================================================
