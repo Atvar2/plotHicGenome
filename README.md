@@ -21,32 +21,32 @@ scipy-1.2.0<br/>
 
 * Install by pip
 
- git clone  https://github.com/chenjunhui/plotHicGenome
- cd plotHicGenome  
- pip install --user   .
+   git clone  https://github.com/chenjunhui/plotHicGenome<br/>
+   cd plotHicGenome<br/>  
+   pip install --user<br/>  .
 
 * Install through raw codes<br/>
- git clone  https://github.com/chenjunhui/plotHicGenome<br/>
- cd  plotHicGenome<br/>
- python  setup.py  install   [--prefix=/user/direction]<br/>
+  git clone  https://github.com/chenjunhui/plotHicGenome<br/>
+  cd  plotHicGenome<br/>
+  python  setup.py  install   [--prefix=/user/direction]<br/>
 
 Notably: you'd better install it under virtual environment in case  system conflict.<br/>
 
-Create virtualenv: https://docs.python.org/3/tutorial/venv.html.<br/>
-Then virtualenv --no-site-packages venv [project Name]<br/>
-
+Create virtualenv refer to:   https://docs.python.org/3/tutorial/venv.html.<br/>
+  virtualenv --no-site-packages venv [project Name]<br/>
 Finally, you need source venv/activate or . venv/activate, and execute as the methods above<br/>
 
 After completing installing, you can type on the command line:<br/>
-For convenience, export PATH="/user/direction/bin:$PATH" if possible<br/>
+
 
 ```Bash
-/user/direction/bin/plotHicGenome  --help
+export PATH="/user/direction/bin:$PATH"
+plotHicGenome  --help
 ```
 
-Usage
+USAGE
 ==============================================================================================
-The package include two sub-command {Hicproc, juicer}, and you can choose  corresponding module basing
+The package include two sub-commands {Hicproc, juicer}, and you can choose corresponding module basing
 on result of the your hic matrix.
 
 ```Bash
@@ -55,8 +55,8 @@ on result of the your hic matrix.
 ********************************************************************************<br/>
 *plotHicGenome  version: 0.1.0<br/>
 *please chose the plot type, subcommand: juicer or Hicproc,command<br/>
-*./plotHicGenome   juicer<br/>
-*./plotHicGenome   Hicproc<br/>
+*plotHicGenome   juicer<br/>
+*plotHicGenome   Hicproc<br/>
 ********************************************************************************<br/>
 
 Display Hic matrix of Hic-proc
@@ -66,6 +66,7 @@ plotHicGenome   Hicproc     Hic_500000.matrix   Hic_500000_abs.bed   -p  chr  -W
 plotHicGenome   Hicproc     Hic_500000.matrix   Hic_500000_abs.bed   -p  chr  -W  chr1  -E  chr20  -n  40  -r  500000  -l   T   -i  300   -z  6,6   -C  black   -L  1 -A  1  -B  "0.5%" -D 0.1    -F  6  -o  Hicprocchr1.pdf    -R  ./
 ```
 ![Hicproc whole genome](https://github.com/chenjunhui/plotHicGenome/blob/plotHicGenome/example/HicprocWhole.pdf)<br/>
+
 Display Hic matrix of Juicerbox
 --------------------------------------------------------------------------------------
 
