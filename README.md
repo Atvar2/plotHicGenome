@@ -11,7 +11,7 @@ Installation
 ----------------------------------------------------------------------------
 
 Python package and command line interface for displaying Hic signals of assembly genome
-was tested with python2.7 on linux. You can install it using pip or through source codes.
+was tested with python 2.7 on linux. You can install it using pip or through source codes.
 
 * Dependent pakage<br/>
 matplotlib-2.2.3<br/>
@@ -20,11 +20,9 @@ numpy-1.16.4<br/>
 scipy-1.2.0<br/>
 
 * Install by pip
-
    git clone  https://github.com/chenjunhui/plotHicGenome<br/>
    cd plotHicGenome<br/>  
    pip install --user<br/>  .
-
 * Install through raw codes<br/>
   git clone  https://github.com/chenjunhui/plotHicGenome<br/>
   cd  plotHicGenome<br/>
@@ -33,8 +31,8 @@ scipy-1.2.0<br/>
 Notably: you'd better install it under virtual environment in case  system conflict.<br/>
 
 Create virtualenv refer to:   https://docs.python.org/3/tutorial/venv.html.<br/>
-  virtualenv --no-site-packages venv [project Name]<br/>
-Finally, you need source venv/activate or . venv/activate, and execute as the methods above<br/>
+  virtualenv --no-site-packages venv  [project Name]<br/>
+Finally, you need `source venv/activate` or `. venv/activate`, and execute as the methods above<br/>
 
 After completing installing, you can type on the command line:<br/>
 
@@ -46,7 +44,7 @@ plotHicGenome  --help
 
 USAGE
 ==============================================================================================
-The package include two sub-commands {Hicproc, juicer}, and you can choose corresponding module basing
+The package includes two sub-commands {Hicproc, juicer}, and you can choose corresponding module basing
 on result of the your hic matrix.
 
 ```Bash
@@ -98,18 +96,11 @@ plotHicGenome juicer   ./merged_nodups.txt  .genome.review.assembly  -W   chr1  
 Parameters
 ==============================================================================================================================================================================
 
-usage: plotHicGenome [-h] [-H MTX] [-p P] [-M CM] [-W CHR] [-E ECHR] [-n N]<br/>
-                     [-s _SORTED] [-r R] [-l LOG] [-i DPI] [-z FIGS]<br/>
-                     [-X AXESL] [-w AXESW] [-d AXESPD] [-S GS] [-C COLO]<br/>
-                     [-L WD] [-A AP] [-B CBSZ] [-D CBPD] [-F FZ] [-o FG]<br/>
-                     [-R ODIR] [-v]<br/>
-                     {juicer,Hicproc} Hic bed<br/>
+usage: plotHicGenome [-h] [-H MTX] [-p P] [-M CM] [-W CHR] [-E ECHR] [-n N] [-s _SORTED] [-r R] [-l LOG] [-i DPI] [-z FIGS] [-X AXESL] [-w AXESW] [-d AXESPD] [-S GS] [-C COLO][-L WD] [-A AP] [-B CBSZ] [-D CBPD] [-F FZ] [-o FG] [-R ODIR] [-v] {juicer,Hicproc} Hic bed<br/>
 
-This kit show links of Hic,you should provide hicfile[sparse matrix of Hic<br/>
-proc | merged_nodups.txt that result from juicer] and bed file [bed file of<br/>
-Hic proc|assemblyView of Juicer], if possible,you may provide chromosome<br/>
-prefix in plot, and default prefix chr.<br/>
-<br/>
+This kit show links of Hic,you should provide hicfile[sparse matrix of Hic proc | merged_nodups.txt that result from juicer] and bed file [bed file of
+Hic proc|assemblyView of Juicer], if possible,you may provide chromosome prefix in plot, and default prefix chr.<br/>
+
 positional arguments:<br/>
   {juicer,Hicproc}      this is only flag, which remind you to run<br/>
                         corresponding module
