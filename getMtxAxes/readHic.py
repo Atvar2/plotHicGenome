@@ -98,6 +98,7 @@ class Juicerbox(head):
 				self.whoChr[chrName]=[start,end]
 		else:
 			for c in self.chromosomes:
+				self.sortedNtoO[c]=c
 				start=end+1
 				end=start+self.chrSize[c]-1
 				self.whoChr[c]=[start,end]
