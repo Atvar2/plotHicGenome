@@ -131,8 +131,7 @@ Parameters
                         method.<br/>
   -r R, --resolution R  resolution used when produce Hic matrix.            //resolution [BIN]<br/>
   -l LOG, --log LOG     assigned parameter log hic matrix or not.           //wether log or not<br/>
-  -i DPI, --Dpi DPI     assigned distinguishability of plot figue,default:300 //dpi
-                        dpi<br/>   
+  -i DPI, --Dpi DPI     assigned distinguishability of plot figue,default:300 //dpi<br/>   
   -z FIGS, --figSize FIGS                                                    //Figure size
                         assigned figure size,default:(6,6)<br/>
   -X AXESL, --AxesLen AXESL                                                  //Axes length
