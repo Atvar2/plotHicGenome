@@ -104,58 +104,58 @@ Parameters
 
   positional arguments:<br/>
   {juicer,Hicproc}      this is only flag, which remind you to run
-                        corresponding module
-  Hic                   Result of juicer:                                     //Hic matrix
-  bed                   ajusted by juicerbox                                  //bed file
+                        corresponding module<br/>
+  Hic                   Result of juicer:                                     //Hic matrix<br/>
+  bed                   ajusted by juicerbox                                  //bed file<br/>
 
-  optional arguments:
-  -h, --help            show this help message and exit
-  -H MTX, --Matrix MTX  matrix file including Hic relation of chromosome      //Hic matrix [bin]
-  -p P, --prefix P      chr prefix                                            //chromosome prefix
-  -M CM, --cMap CM      color shapping you choseed,five cMap you can select   //mapplotlib color map
+  optional arguments:<br/>
+  -h, --help            show this help message and exit<br/>
+  -H MTX, --Matrix MTX  matrix file including Hic relation of chromosome      //Hic matrix [bin]<br/>
+  -p P, --prefix P      chr prefix                                            //chromosome prefix<br/>
+  -M CM, --cMap CM      color shapping you choseed,five cMap you can select   //mapplotlib color map<br/>
   -W CHR, --chromosome CHR                                                    //chromoesome,default: whole
                         plot the whole genome, if you provide the last
                         chomosome, then the figure will show between first
                         chromosome and the last chomosome for Hic matrix of
                         Hicproc method. while you provide single choromosome,
-                        it will display the chromosome.
+                        it will display the chromosome.<br/>
   -E ECHR, --endChr ECHR                                                      //last chromosome,if plot using Hic matrix of Hicproc method
                         assigned parameter the last chromosome in the bed, the
                         ved file should be ordered,it's only for Hic matrix of
-                        Hicproc method.
-  -n N, --chrNumber N   assigned parameter the chromosome number of genome,   //chromosome number of genome
-                        it's only for Hic matrix of juicerbox method.
-  -s _SORTED, --chrsorted _SORTED                                             //sorted by chromosome size or not, for allotetraploid, it should set to False or F
+                        Hicproc method.<br/>
+  -n N, --chrNumber N   assigned parameter the chromosome number of genome,   //chromosome number of genome<br/>
+                        it's only for Hic matrix of juicerbox method.<br/>
+  -s _SORTED, --chrsorted _SORTED                                             //sorted by chromosome size or not, for allotetraploid, it should set to False or F<br/>
                         assigned parameter whether based one genome size
                         [False, True], it's only for Hic matrix of juicerbox
-                        method.
-  -r R, --resolution R  resolution used when produce Hic matrix.            //resolution [BIN]
-  -l LOG, --log LOG     assigned parameter log hic matrix or not.           //wether log or not
+                        method.<br/>
+  -r R, --resolution R  resolution used when produce Hic matrix.            //resolution [BIN]<br/>
+  -l LOG, --log LOG     assigned parameter log hic matrix or not.           //wether log or not<br/>
   -i DPI, --Dpi DPI     assigned distinguishability of plot figue,default:300 //dpi
-                        dpi   
+                        dpi<br/>   
   -z FIGS, --figSize FIGS                                                    //Figure size
                         assigned figure size,default:(6,6)<br/>
   -X AXESL, --AxesLen AXESL                                                  //Axes length
-                        length of x, y axis ticks.
+                        length of x, y axis ticks.<br/>
   -w AXESW, --Axeswd AXESW                                                  //Axes width
                         width of x, y axis ticks.<br/>
   -d AXESPD, --AxesPd AXESPD                                               //distance between axes and figure region
                         distance between x, y axis ticks label and plot
-                        object.
+                        object.<br/>
   -S GS, --gstyple GS   grid linestyle, '-' or 'solid','--' or 'dashed','-.'   //grid type 
-                        or 'dashdot',':' or 'dotted',none
+                        or 'dashdot',':' or 'dotted',none<br/>
   -C COLO, --gColor COLO                                                       //grid color
                         grid color, default: black.<br/>
-  -L WD, --glinewd WD   grid linewidth!,defult:1                              //grid width
-  -A AP, --gAlpha AP    grid alpha!,defult:1                                  //grid alpha
+  -L WD, --glinewd WD   grid linewidth!,defult:1                              //grid width<br/>
+  -A AP, --gAlpha AP    grid alpha!,defult:1                                  //grid alpha<br/>
   -B CBSZ, --cbSize CBSZ                                                      //color bar size, default 0.5%
-                        percentage of plot ax, default: percentage: 0.5. 
+                        percentage of plot ax, default: percentage: 0.5.<br/> 
   -D CBPD, --cbPad CBPD                                                       //distantance between colorbar and plot ax
-                        distantance between colorbar and plot ax!,defalt:0.1
-  -F FZ, --fontsize FZ  fontsize for chromosome when plot whole genome!        //fontsize for chromosome
-  -o FG, --output FG    output name of figure                                  //output figure
+                        distantance between colorbar and plot ax!,defalt:0.1<br/>
+  -F FZ, --fontsize FZ  fontsize for chromosome when plot whole genome.        //fontsize for chromosome<br/>
+  -o FG, --output FG    output name of figure                                  //output figure<br/>
   -R ODIR, --outdir ODIR                                                      //outputdir
-                        output directory storing result
-  -v, --verbose         show version of kit
+                        output directory storing result<br/>
+  -v, --verbose         show version of kit<br/>
 
 
