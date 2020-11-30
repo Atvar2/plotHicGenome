@@ -49,7 +49,7 @@ class getmarixticks(object):
 		### prefix #########
 		prefix=self.prefix
 		axesTicks={}
-		chrStart=0;chrEnd=1
+		chrStart=0;chrEnd=0
 		for  block  in self.chrList:
 			binnum=len(block[1])
 			chrEnd+=binnum
