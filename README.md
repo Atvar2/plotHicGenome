@@ -20,8 +20,6 @@ numpy-1.16.4<br/>
 scipy-1.2.0<br/>
 
 * Install by pip<br/>
-   git clone  https://github.com/chenjunhui/plotHicGenome<br/>
-   cd plotHicGenome<br/>
    pip install --user<br/>
 * Install through raw codes<br/>
   git clone  https://github.com/chenjunhui/plotHicGenome<br/>
